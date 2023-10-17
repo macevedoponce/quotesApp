@@ -1,14 +1,9 @@
 package com.acevedo.examplemvvm.data.model
 
-class QuoteProvider {
+import javax.inject.Inject
+import javax.inject.Singleton
 
-
-    companion object{ // -> esto es para que se puedan acceder a estos datos
-
-        var quotes:List<QuoteModel> = emptyList()
-
-
-    }
-
-
+@Singleton
+class QuoteProvider @Inject constructor() {
+    var quotes: List<QuoteModel> = emptyList()
 }

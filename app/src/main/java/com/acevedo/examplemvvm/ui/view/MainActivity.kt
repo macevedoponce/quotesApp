@@ -1,15 +1,16 @@
 package com.acevedo.examplemvvm.ui.view
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
 import com.acevedo.examplemvvm.databinding.ActivityMainBinding
 import com.acevedo.examplemvvm.ui.viewModel.QuoteViewModel
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
+@AndroidEntryPoint //preparamos la clase para inyectar
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
